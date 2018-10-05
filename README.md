@@ -8,3 +8,10 @@ Homepage: https://www.duplicati.com/
 kcp -i gtk-sharp-2
 kcp -i duplicati
 ```
+
+### Management:
+* UI can be accessed via following URL: http://localhost:8200
+  * Running duplicati user instance (using current user account)
+    - to reload user systemd modules:        systemctl --user daemon-reload
+    - to start duplicati manually:           systemctl --user start duplicati
+    - to autostart duplicati on user login:  systemctl --user enable duplicati
